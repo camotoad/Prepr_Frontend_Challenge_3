@@ -367,3 +367,22 @@ body.dark, .dark * {
   .desc{
       font-size: x-small;
   }
+
+  .drop-area{
+      border-style: dashed;
+      border-radius: 3px;
+      border-color: grey;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      color:grey;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      background-size:cover;
+      background-repeat: no-repeat;
+  }
+
+  input[type="file"] {
+    display: none;
+}

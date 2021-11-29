@@ -32,3 +32,41 @@ $('#profile-nav').on('click',()=>{
         $('#right-nav').addClass('profile-nav-open')
     }
 });
+
+const image_drop_area = document.querySelector("#img_drop_area");
+var uploaded_image;
+
+image_drop_area.addEventListener('dragover', (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+    event.dataTransfer.dropEffect = 'copy';
+  });
+
+image_drop_area.addEventListener('drop', (event) => {
+    event.stopPropagation();
+    event.preventDefault();
+    fileList = event.dataTransfer.files;
+    
+    readImage(fileList[0]);
+  });
+
+  readImage = (file) => {
+    const reader = new FileReader();
+    reader.addEventListener('load', (event) => {
+      uploaded_image = event.target.result;
+      document.querySelector("#img_drop_area").style.backgroundImage = `url(${uploaded_image})`;     
+    });
+    reader.readAsDataURL(file);
+  }
+
+// function imgFunc(file){
+//     let src = URL.createObjectURL(file);
+//     document.querySelector("#img_drop_area").style.backgroundImage = `url(${file.URL})`;
+// }
+
+document.getElementById('myImage').onchange = (e) =>{
+    let target = e.target.files[0];
+    let src = URL.createObjectURL(target);
+    console.log(src);
+    document.querySelector("#img_drop_area").style.backgroundImage = `url(${src})`;
+}

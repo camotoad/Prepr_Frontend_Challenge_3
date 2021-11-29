@@ -161,14 +161,41 @@
             <div class='row'>
                 <div class='col-lg-12'>
                     <div class='card'>
-                        <div class=''>
-                            <div class='content'>
-                                <div class='card-title bg-white'>
-                                    <h3 style='float:left; color: grey'>STEP 1: CREATE A NEW PROJECT</h3>
-                                    
+                        <form method='post'>
+                            <div class=''>
+                                <div class='content'>
+                                    <div class='card-title bg-white'>
+                                        <h3 style='float:left; color: grey'>STEP 1: CREATE A NEW PROJECT</h3>
+                                    </div>
+                                    <div class='dropdown-divider'></div>
+                                </div>
+                                <div class='col-lg-12'>
+                                    <div class='row'>
+                                        <div class='col-lg-12'>
+                                            <div id='img_drop_area' class='drop-area'>
+                                                <div class='row' style='margin: 50px 50px'>
+                                                    <div class='col-md-6' style='text-align: center;'>
+                                                        <div>
+                                                            <img src='images/upload_img.png'>
+                                                        </div>                                                  
+                                                    </div>
+                                                    <div class='col-md-6' style='text-align: center;'>
+                                                        <h3>Drag & drop</h3>
+                                                        <h3>or</h3>
+                                                        <!-- <button class='btn btn-primary'>Choose a project cover Image</button> -->
+                                                        <label for='myImage' class='btn btn-primary' style='cursor: pointer;'>Choose a project cover Image</label>
+                                                        <input type="file" name="myImage" id='myImage'/>
+                                                        <p>The cover image will be cropped to fit 625 x 355 pixels</p>
+                                                        <h3>or</h3>
+                                                        <input type='text' class='form-control' placeholder="Insert embedded video code">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
