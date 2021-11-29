@@ -105,7 +105,7 @@ section{
 }
 
 footer{
-    margin-top: 60px;
+    margin-top: 10px;
     height: 50px;
     text-align: center;
     vertical-align: middle;   
@@ -238,11 +238,6 @@ a.title-link:hover{
     display: block;
 }
 
-div.active, .active a:link, .active a:visited{
-    background-color: whitesmoke;
-    color: #13b15c;
-}
-
 div.inactive:hover{
     transform: scale(1.1);
     box-shadow: 1px 1px 5px 5px #888888;
@@ -332,6 +327,8 @@ body.dark, .dark * {
 .tabs{
     width: 100%;
     border-bottom-width: 5px !important;
+    max-height: 45px;
+    white-space:nowrap;
 }
 
 .card{
@@ -355,4 +352,18 @@ body.dark, .dark * {
     color: inherit;
     outline: 0;
     cursor: default !important;
+  }
+
+  .active {
+    color: #13b15c;
+    border-color: #13b15c !important;
+  }
+
+  .content{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .desc{
+      font-size: x-small;
   }
