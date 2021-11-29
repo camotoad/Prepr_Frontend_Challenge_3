@@ -161,7 +161,7 @@
             <div class='row'>
                 <div class='col-lg-12'>
                     <div class='card'>
-                        <form method='post'>
+                        <form method='post' id='myForm'>
                             <div class=''>
                                 <div class='content'>
                                     <div class='card-title bg-white'>
@@ -188,6 +188,196 @@
                                                         <p>The cover image will be cropped to fit 625 x 355 pixels</p>
                                                         <h3>or</h3>
                                                         <input type='text' class='form-control' placeholder="Insert embedded video code">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div style='text-align: center;'>
+                                                <p class='grey'> You will be able to create your pitch and upload files later</p>
+                                            </div>
+                                            <div class='col-md-12'>
+                                                <div class='row' style=''>
+                                                    <div class='col-md-2' style=''></div>
+                                                    <div class='col-md-4' style=''>
+                                                        <h6>Overview</h6>
+                                                        <input type='text' class='form-control' placeholder="Project Name *" name='Project Name'>
+                                                        <br>
+                                                        <textarea name='Project Overview' class='form-control' style='min-height: 200px;' placeholder="Project Overview * (maximum 300 Characters)"></textarea>
+                                                        <br>
+                                                        <input type='text' class='form-control' placeholder="Project Start Date *" name="Project Start Date">
+                                                    </div>
+                                                    <div class='col-md-4'>
+                                                        <select class="form-control" name="category">
+                                                            <option value="" selected="selected">Category</option>
+                                                            <option value="Small-Mid Sized Business">Small-Mid Sized Business</option>
+                                                            <option value="Community Organization">Community Organization</option>
+                                                            <option value="Association">Association</option>
+                                                            <option value="Not-for-profit">Not-for-profit</option>
+                                                            <option value="Employment Service Organization">Employment Service Organization</option>
+                                                            <option value="Settlement Organization">Settlement Organization</option>
+                                                            <option value="District School Board">District School Board</option>
+                                                            <option value="Economic Development Office">Economic Development Office</option>
+                                                            <option value="Board of Trade">Board of Trade</option>
+                                                            <option value="Chamber of Commerce">Chamber of Commerce</option>
+                                                            <option value="Everyone">Everyone</option>
+                                                        </select>
+                                                        <br>
+                                                        <select class="form-control" name="industry">
+                                                            <option value="" selected="selected">Industry</option>
+                                                            <option value="Automotive">Automotive</option>
+                                                            <option value="Finance">Finance</option>
+                                                            <option value="Consumer">Consumer</option>
+                                                            <option value="Education">Education</option>
+                                                            <option value="Engineering">Engineering</option>
+                                                            <option value="Energy">Energy</option>
+                                                            <option value="Oil and gas">Oil and gas</option>
+                                                            <option value="Consumer Packaged Goods">Consumer Packaged Goods</option>
+                                                            <option value="Financial Services">Financial Services</option>
+                                                            <option value="Food and beverage">Food and beverage</option>
+                                                            <option value="Government">Government</option>
+                                                            <option value="Healthcare">Healthcare</option>
+                                                            <option value="Insurance">Insurance</option>
+                                                            <option value="Legal">Legal</option>
+                                                            <option value="Manufacturing">Manufacturing</option>
+                                                            <option value="Media">Media</option>
+                                                            <option value="Online">Online</option>
+                                                            <option value="Raw materials">Raw materials</option>
+                                                            <option value="Real estate">Real estate</option>
+                                                            <option value="Industrials">Industrials</option>
+                                                            <option value="Retail">Retail</option>
+                                                            <option value="Jewelry">Jewelry</option>
+                                                            <option value="Technology">Technology</option>
+                                                            <option value="Telecommunications">Telecommunications</option>
+                                                            <option value="Transportation">Transportation (Travel)</option>
+                                                            <option value="Electronics">Electronics</option>
+                                                            <option value="Not-for-profit">Not-for-profit</option>
+                                                            <option value="Life sciences">Life sciences</option>
+                                                            <option value="Hospitality">Hospitality</option>
+                                                            <option value="Environment">Environment</option>
+                                                        </select>
+                                                        <br>
+                                                        <select class="form-control" name="Verticals">
+                                                            <option value="" selected="selected">Verticals</option>
+                                                            <option value="LOHAS and wellness">LOHAS and wellness</option>
+                                                            <option value="MarTech">MarTech</option>
+                                                            <option value="Mortgage Tech">Mortgage Tech</option>
+                                                            <option value="Nanotechnology">Nanotechnology</option>
+                                                            <option value="Pet Technology">Pet Technology</option>
+                                                            <option value="Real Estate Technology">Real Estate Technology</option>
+                                                            <option value="Restaurant Technology">Restaurant Technology</option>
+                                                            <option value="Ridesharing">Ridesharing</option>
+                                                            <option value="Robotics and drones">Robotics and drones</option>
+                                                            <option value="SaaS (software as a service)">SaaS (software as a service)</option>
+                                                            <option value="Space Technology">Space Technology</option>
+                                                            <option value="TMT (Technology, media and telecommunications)">TMT (Technology, media and telecommunications)</option>
+                                                            <option value="Virtual reality">Virtual reality</option>
+                                                            <option value="Wearables">Wearables</option>
+                                                            <option value="ML & AI">Machine Learning &amp; Artificial Intelligence</option>
+                                                            <option value="VR/AR/MR">Virtual Reality / Augmented Reality / Mixed Reality</option>
+                                                            <option value="ElderTech">ElderTech</option>
+                                                            <option value="EdTech">EdTech</option>
+                                                            <option value="Blockchain">Blockchain</option>
+                                                            <option value="FinTech">FinTech</option>
+                                                            <option value="MedTech">MedTech</option>
+                                                            <option value="CleanTech">CleanTech</option>
+                                                            <option value="AdTech">AdTech</option>
+                                                            <option value="Cybersecurity">Cybersecurity</option>
+                                                        </select>
+                                                        <br>
+                                                        <select class="form-control" name="Type">
+                                                            <option value="" selected="selected">Type</option>
+                                                            <option value="Hackathon">Hackathon</option>
+                                                            <option value="Sponsored Challenge">Sponsored Challenge</option>
+                                                            <option value="Startup">Startup</option>
+                                                            <option value="Passion">Passion</option>
+                                                            <option value="Capstone">Capstone</option>
+                                                            <option value="Personal">Personal</option>
+                                                            <option value="Assessment">Assessment</option>
+                                                            <option value="Innovation">Innovation</option>
+                                                            <option value="Learning">Learning</option>
+                                                            <option value="Work">Work</option>
+                                                        </select>
+                                                        <br>
+                                                        <select class="form-control" name="Stage">
+                                                            <option value="" selected="selected">Stage</option>
+                                                            <option value="Prototype">Prototype</option>
+                                                            <option value="Validation">Validation</option>
+                                                            <option value="Experimentation">Experimentation</option>
+                                                            <option value="Pre-incubation">Pre-incubation</option>
+                                                            <option value="Incubation">Incubation</option>
+                                                            <option value="Acceleration">Acceleration</option>
+                                                            <option value="Scale-up">Scale-up</option>
+                                                            <option value="Concept">Concept</option>
+                                                            <option value="Idea">Idea</option>
+                                                        </select>
+                                                        <br>
+                                                        <select class="form-control" name="Status">
+                                                            <option value="" selected="selected">Status</option>
+                                                            <option value="Active">Active</option>
+                                                            <option value="On-Hold">On-Hold</option>
+                                                            <option value="Fundraising">Fundraising</option>
+                                                            <option value="Closed">Closed</option>
+                                                            <option value="Started">Started</option>
+                                                            <option value="Submitted">Submitted</option>
+                                                            <option value="Under Assessment">Under Assessment</option>
+                                                            <option value="Assessment Complete">Assessment Complete</option>
+                                                        </select>
+                                                        <br>
+                                                        <select class="form-control" name="Recruiting">
+                                                            <option value="" selected="selected">Recruitment Status</option>
+                                                            <option value="Currently Recruiting">Currently Recruiting</option>
+                                                            <option value="Not Currently Recruiting">Not Currently Recruiting</option>
+                                                        </select>
+                                                        <br>
+                                                    </div>
+                                                    <div class='col-md-2' style='margin-top: 8px;'>
+                                                        <div style='padding-bottom: 38px;'>
+                                                            <span id='question' style='padding-bottom: 50px;'><a data-bs-placement="right" data-toggle='popover' data-content="Where did this project originate from?"><i class='fas fa-question-circle' style="color: grey;"></i></a></span>
+                                                        </div>
+                                                        <div style='padding-bottom: 38px;'>
+                                                            <span id='question' style=''><a data-bs-placement="right" data-toggle='popover' data-content="Which industry is your project targetting?"><i class='fas fa-question-circle' style="color: grey;"></i></a></span>
+                                                        </div>    
+                                                        <div style='padding-bottom: 38px;'>
+                                                            <span id='question' style=''><a data-bs-placement="right" data-toggle='popover' data-content="What is the industry vertical of your project?"><i class='fas fa-question-circle' style="color: grey;"></i></a></span>
+                                                        </div>
+                                                        <div style='padding-bottom: 38px;'>
+                                                            <span id='question' style=''><a data-bs-placement="right" data-toggle='popover' data-content="Where did you create this project at?"><i class='fas fa-question-circle' style="color: grey;"></i></a></span>
+                                                        </div>
+                                                        <div style='padding-bottom: 38px;'>
+                                                            <span id='question' style=''><a data-bs-placement="right" data-toggle='popover' data-content="What is the current stage of your project?"><i class='fas fa-question-circle' style="color: grey;"></i></a></span>
+                                                        </div>
+                                                        <div style='padding-bottom: 38px;'>
+                                                            <span id='question' style=''><a data-bs-placement="right" data-toggle='popover' data-content="What is the current status of your project?"><i class='fas fa-question-circle' style="color: grey;"></i></a></span>
+                                                        </div>
+                                                        <div style='padding-bottom: 38px;'>
+                                                            <span id='question' style=''><a data-bs-placement="right" data-toggle='popover' data-content="What is the current recruiting status of your project?"><i class='fas fa-question-circle' style="color: grey;"></i></a></span>
+                                                        </div>                                           
+                                                    </div>
+                                                    <div class='col-md-2' style=''></div>
+                                                    <div class='col-md-10'>
+                                                        <h6>Privacy</h6>
+                                                        <div class='row' style='margin-left: 0px;'>
+                                                            <div class='col-md-2 form-check'>
+                                                                <input class="form-check-input" type="radio" name="privacy" id="p1" value='Public Project' checked>
+                                                                <label class="form-check-label" for="p1">
+                                                                Public Project
+                                                                </label>
+                                                            </div>
+                                                            <div class='col-md-2 form-check'>
+                                                                <input class="form-check-input" type="radio" name="privacy" id="p2" value="Private Project">
+                                                                <label class="form-check-label" for="p2">
+                                                                Private Project
+                                                                </label>
+                                                                <span id='question' style='margin-left: 5px;'><a data-bs-placement="right" data-toggle='popover' data-content="Public projects are visible to everyone. Private projects are only visible by you."><i class='fas fa-question-circle' style="color: grey;"></i></a></span>
+                                                            </div> 
+                                                            <div class='col-md-8'>                                                             
+                                                            </div>
+                                                            
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class='col-md-12' style='text-align: center; margin-bottom: 30px; margin-top: 20px;'>
+                                                            <input class='btn btn-primary' type="submit" value='Create'>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -223,5 +413,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="scripts.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover({trigger: 'hover'});
+        });
+        </script>
 </body>
 </html>

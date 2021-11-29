@@ -386,3 +386,21 @@ body.dark, .dark * {
   input[type="file"] {
     display: none;
 }
+
+.grey{
+    color: grey;
+}
+
+.form-check-input:checked, .popover{
+    background-color: #13b15c !important;
+    color: white !important;
+}
+
+.popover{
+    margin-left: 5px;
+    color: white !important;
+}
+
+.popover-content {
+    color: white !important;
+  }

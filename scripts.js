@@ -70,3 +70,19 @@ document.getElementById('myImage').onchange = (e) =>{
     console.log(src);
     document.querySelector("#img_drop_area").style.backgroundImage = `url(${src})`;
 }
+
+  $('#question').popover({trigger: 'hover'});
+
+  const serialize_form = form => JSON.stringify(
+    Array.from(new FormData(form).entries())
+         .reduce((m, [ key, value ]) => Object.assign(m, { [key]: value }), {})
+  );
+
+  $('#myForm').on('submit', (event) => {
+    event.preventDefault();
+    const formData = serialize_form(event.target);
+    
+    console.log(formData);
+    var newWindow = open('/blank.html');
+    newWindow.document.write(formData);
+  });
